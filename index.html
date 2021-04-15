@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+   <section class="header" id="header">
+        <div class="nav-bar">
+           <div class="logo"> 
+              <a href="#">Yokomo</a>
+           </div>
+            <div class="menu">
+             <ul>
+             <li><a href="#" class="active">Drift Cars</a></li>
+             <li><a href="#">History</a></li>
+             <li><a href="#">Technology</a></li>   
+             <li><a href="#">Production</a></li>  
+             <li><a href="#">Reviews</a></li>
+             </ul>
+            </div>
+            <div class="social-media">
+                <ul>
+                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="row">
+                <div class="left-sec">
+                    <div class="content">
+                        <h2><span>Yokomo</span><br>Drift Car</h2>
+                        <p> 
+                           Yokomo Co. Ltd. is a Japanese company from Adachi, Tokyo that
+                           specialize in radio-controlled cars, it was one of the first manufacturers in Japan to build RC cars and it also invented the
+                           RTR (Ready To Run) cars, but most notable of all is their long-running "Dog Fighter" series of radio controlled buggies,
+                           mainly through its successes in racing.
+                        </p>
+                    </div>
+                    <button class="discover-btn">
+                        <a href="#">discover</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+                    </button>
+                    <div class="information">
+                      <div class="production">
+                        <p>Founded</p>
+                        <h2>1 May 1965</h2>
+                      </div>
+                      <div class="production">
+                        <p>Founder</p>
+                        <h2>Tomoaki Yokobori</h2>
+                      </div>
+                    </div>
+                </div>
+                <div class="right-sec">
+                  <div class="my-car">
+                    <div> <a href="https://www.rcmart.com/yokomo-1-10-yd-2e-rwd-ep-competition-drift-car-chassis-kit-dp-yd2e-00076868"> <img src="img/1.png"></a></div>
+                    <div><a href="https://www.rcmart.com/yokomo-1-10-yd-2e-rwd-ep-competition-drift-car-chassis-kit-w-yg-302-steering-gyro-dp-yd2eg-00080613"> <img src="img/2.png"></a></div>
+                    <div><a href="https://www.rcmart.com/yokomo-1-10-yd-2e-plus-rwd-ep-competition-drift-car-chassis-kit-dp-yd2epls-00077090"> <img src="img/3.png"></a></div>
+                    <div><a href="https://www.rcmart.com/yokomo-1-10-yd-2s-rwd-ep-drift-car-chassis-kit-w-yg-302-gyro-dp-yd2sg-00076274"> <img src="img/4.png"></a></div>
+                    <div><a href="https://www.rcmart.com/yokomo-yd-2rx-1-10-rwd-drift-car-red-limited-edition-chassis-kit-ep-dp-yd2rxr-00105985"> <img src="img/5.png"></a></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+   </section>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+   <script type="text/javascript">
+    $(document).ready(function(){
+    
+    });
+
+    $(".my-car").slick({
+    autoplay: true,
+    speed:1000,
+    dots: true,
+    customPaging : function(slider, i) {
+    var thumb = $(slider.$slides[i]).data();
+    return '<a>'+(i+1)+'</a>';
+    },
+ 
+    });
+   </script>
+</body>
+</html>
